@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Search Weather <i class="fa-brands fa-searchengin"></i></h1>
+        <input type="text" id="cityInput" placeholder="Enter city name">
+            <button id="getWeatherButton">Get Weather</button>
+        <h2 id="locationName"></h2>
+        <div id="weatherDetails">
+            <div class="weather-item">
+                <i class="fa-solid fa-temperature-half"></i>
+                <p>Temperature: <br><span id="temperature"></span></p>
+            </div>
+            <div class="weather-item">
+                <i class="fa-solid fa-cloud-sun-rain"></i>
+                <p>Conditions: <br><span id="conditions"></span></p>
+            </div>
+            <div class="weather-item">
+                <i class="fa-solid fa-fire-flame-curved"></i>
+                <p>Humidity: <br><span id="humidity"></span></p>
+            </div>
+            <div class="weather-item">
+                <i class="fa-solid fa-wind"></i>
+                <p>Wind Speed: <br><span id="windSpeed"></span></p>
+            </div>
+        </div>
+        <button id="clearButton">Clear</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
